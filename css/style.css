@@ -11,10 +11,24 @@
 	margin-bottom: 1%;
 }
 
+.album-img-wrapper {
+	margin-bottom: 5%;
+}
+
 .album-img-form {
+	width: 40%;
+	margin-left: 25%;
+	float: left;
+}
+
+.album-file-submit {
 	width: 50%;
 	margin-left: 25%;
-	margin-bottom: 3%;
+}
+
+.album-file-wrapper {
+    float: left;
+    width: 7%;
 }
 
 .album-download {
@@ -34,4 +48,16 @@
 	margin-bottom: 1%;
 	text-align: center;
 	font-style: italic;
+}
+
+.file-submit-label {
+	border: 1px solid #ccc;
+	float: right;
+}
+
+.filler {
+	padding-top: 8px;
+	float: left;
+	margin-left: 1%;
+    width: 2%;
 }
