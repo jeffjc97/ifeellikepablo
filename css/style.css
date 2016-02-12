@@ -12,7 +12,7 @@
 }
 
 .album-img-wrapper {
-	margin-bottom: 5%;
+	margin-bottom: 7%;
 }
 
 .album-img-form {
@@ -53,11 +53,14 @@
 .file-submit-label {
 	border: 1px solid #ccc;
 	float: right;
+	text-align: center;
 }
 
 .filler {
 	padding-top: 8px;
 	float: left;
-	margin-left: 1%;
+	margin-left: 4px;
+	margin-right: 4px;
     width: 2%;
+    text-align: center;
 }
