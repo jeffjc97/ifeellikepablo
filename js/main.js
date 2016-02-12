@@ -1,4 +1,4 @@
-var formType = '';
+var formType = 'url';
 
 $(document).ready(function() {
     $('.album-submit').click(function() {
@@ -29,14 +29,16 @@ clearCanvas = function() {
 
 makeCoverText = function(title) {
     clearCanvas();
-    if (formType === '') {
-        makeCoverImg('url', "http://i.imgur.com/G42jwgC.png");
-    }
-    else if (formType === 'url') {
-        makeCoverImg('url', $('.album-img').val());
+    if (formType === 'url') {
+        if ($('.album-img').val() === '') {
+            makeCoverImg('url', "http://i.imgur.com/G42jwgC.png");
+        }
+        else {
+            makeCoverImg('url', $('.album-img').val());
+        }
     }
     else {
-        makeCoverImg('file', $('.album-file-submit')[0].files[0])
+        makeCoverImg('file', $('.album-file-submit')[0].files[0]);
     }
     context.font = "700 13.5px Helvetica";
     context.textBaseline = "top";
