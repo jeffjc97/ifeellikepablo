@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TLOP</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<h1 class="title">T.L.O.P.</h1>
+	<div class="input-group album-form">
+      	<input type="text" class="form-control album-text" placeholder="TEXT">
+      	<span class="input-group-btn">
+        	<button class="btn btn-default album-submit" type="button">UPDATE TEXT</button>
+      	</span>
+    </div>
+    <div class="input-group album-img-form">
+      	<input type="text" class="form-control album-img" placeholder="IMAGE URL">
+      	<span class="input-group-btn">
+        	<button class="btn btn-default album-img-submit" type="button">UPDATE IMAGE</button>
+      	</span>
+    </div>
+    <!-- <div class="info">To download, right-click the image and select "Save Image As..."</div> -->
+    <div class="info">TO DOWNLOAD, RIGHT-CLICK THE IMAGE AND SELECT "SAVE IMAGE AS..."</div>
+  	<canvas id="album-art" width="512" height="512"></canvas>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
