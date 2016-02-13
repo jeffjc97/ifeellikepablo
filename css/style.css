@@ -63,3 +63,10 @@
     width: 2%;
     text-align: center;
 }
+
+.note-info {
+	margin-top: 1%;
+	margin-bottom: -1%;
+	text-align: center;
+	font-style: italic;
+}
