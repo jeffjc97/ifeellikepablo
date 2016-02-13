@@ -87,7 +87,10 @@ makeCoverImg = function(type, data) {
     coverImg.onload = function() {
         context.drawImage(coverImg, 66, 392, 118, 83);
     };
-    coverImg.setAttribute('crossOrigin', 'anonymous');
+
+    if (navigator.userAgent.toLowerCase().indexOf('chrome') > -1) {
+        coverImg.setAttribute('crossOrigin', 'anonymous');
+    }
 
     if (type == 'url') {
         formType = 'url';
